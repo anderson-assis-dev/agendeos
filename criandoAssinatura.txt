@@ -1,0 +1,142 @@
+https://sandbox.api.assinaturas.pagseguro.com/subscriptions
+Request
+{
+    "plan": {
+        "id": "PLAN_A13097E3-E9B1-486B-B567-B9ABF0BBF6AF"
+    },
+    "customer": {
+        "id": "CUST_41FA84A7-479E-49D0-9A6D-36768A58ACF6",
+        "billing_info": [
+            {
+                "card": {
+                    "holder": {
+                        "phone": {
+                            "country": "55",
+                            "area": "75",
+                            "number": "988888888"
+                        },
+                        "name": "Anderson Nascimento",
+                        "birth_date": "1997-07-19",
+                        "tax_id": "09962961075"
+                    },
+                    "encrypted": "f1nYh7eiAEQub54ZErScHb4I1SPQyjJSIkUdwZYEpmOPYJWZANplXR2OxYcTtpmv3Y8Bm+57OCgLGuodvxp8flPR9t8SUfyf0OAw7mDYWMOCsanttepjUEbTGv3JV\/FL57M+we\/wc3vHgPoKdNPcDuu0u8BNac\/kZqH9XrSYCrl1SpjdgcIg4mpLVmtuZKqMoCEsGcnr30Qzabqa\/bDBjMI5y4gk6qrzjFFKpAQGXhvG+94MQjvMUniFPswhHFNLG99xVNMOlUzV2s\/LMlwoRRJtymAat7leB5IB2\/WmhN1wdeGVGKL4HpAcELpP1oD\/Z7vmvlRf\/cQH1Pd8vt4GjA=="
+                },
+                "type": "CREDIT_CARD"
+            }
+        ]
+    },
+    "amount": {
+        "currency": "BRL",
+        "value": 6500
+    },
+    "reference_id": 31,
+    "payment_method": [
+        {
+            "type": "CREDIT_CARD",
+            "card": {
+                "security_code": "123"
+            }
+        }
+    ],
+    "pro_rata": false
+}
+{
+    "id": "SUBS_76242B8A-8C6F-4F7B-8DEA-6BA6A1ADA35C",
+    "reference_id": "31",
+    "amount": {
+        "value": 6500,
+        "currency": "BRL"
+    },
+    "status": "TRIAL",
+    "trial": {
+        "start_at": "2024-02-27",
+        "end_at": "2024-03-04"
+    },
+    "plan": {
+        "id": "PLAN_A13097E3-E9B1-486B-B567-B9ABF0BBF6AF",
+        "name": "Plano Básico"
+    },
+    "payment_method": [
+        {
+            "type": "CREDIT_CARD",
+            "card": {
+                "token": "CARD_AC35****************************68FF",
+                "brand": "visa",
+                "first_digits": "411111",
+                "last_digits": "1111",
+                "exp_month": "12",
+                "exp_year": "2030",
+                "holder": {
+                    "name": "Anderson Nascimento",
+                    "tax_id": "09962961076",
+                    "birth_date": "1997-07-19"
+                }
+            }
+        }
+    ],
+    "next_invoice_at": "2024-03-05",
+    "pro_rata": false,
+    "customer": {
+        "id": "CUST_41FA84A7-479E-49D0-9A6D-36768A58ACF6",
+        "name": "iosdan test",
+        "email": "iosdtet@gmail.com"
+    },
+    "created_at": "2024-02-27T15:01:25.766-03:00",
+    "updated_at": "2024-02-27T15:01:26.682-03:00",
+    "links": [
+        {
+            "rel": "SELF",
+            "href": "http://sandbox.api.assinaturas.pagseguro.com/subscriptions",
+            "media": "application/json",
+            "type": "GET"
+        },
+        {
+            "rel": "SELF",
+            "href": "http://sandbox.api.assinaturas.pagseguro.com/subscriptions/SUBS_76242B8A-8C6F-4F7B-8DEA-6BA6A1ADA35C",
+            "media": "application/json",
+            "type": "GET"
+        },
+        {
+            "rel": "SELF",
+            "href": "http://sandbox.api.assinaturas.pagseguro.com/subscriptions/SUBS_76242B8A-8C6F-4F7B-8DEA-6BA6A1ADA35C/suspend",
+            "media": "application/json",
+            "type": "PUT"
+        },
+        {
+            "rel": "SELF",
+            "href": "http://sandbox.api.assinaturas.pagseguro.com/subscriptions/SUBS_76242B8A-8C6F-4F7B-8DEA-6BA6A1ADA35C/cancel",
+            "media": "application/json",
+            "type": "PUT"
+        },
+        {
+            "rel": "SELF",
+            "href": "http://sandbox.api.assinaturas.pagseguro.com/subscriptions/SUBS_76242B8A-8C6F-4F7B-8DEA-6BA6A1ADA35C/activate",
+            "media": "application/json",
+            "type": "PUT"
+        },
+        {
+            "rel": "SELF",
+            "href": "http://sandbox.api.assinaturas.pagseguro.com/subscriptions/SUBS_76242B8A-8C6F-4F7B-8DEA-6BA6A1ADA35C",
+            "media": "application/json",
+            "type": "PUT"
+        },
+        {
+            "rel": "SELF",
+            "href": "http://sandbox.api.assinaturas.pagseguro.com/subscriptions/SUBS_76242B8A-8C6F-4F7B-8DEA-6BA6A1ADA35C/coupons",
+            "media": "application/json",
+            "type": "DELETE"
+        },
+        {
+            "rel": "INVOICE",
+            "href": "http://sandbox.api.assinaturas.pagseguro.com/subscriptions/SUBS_76242B8A-8C6F-4F7B-8DEA-6BA6A1ADA35C/invoices",
+            "media": "application/json",
+            "type": "GET"
+        },
+        {
+            "rel": "INVOICES.LAST",
+            "href": "http://sandbox.api.assinaturas.pagseguro.com/invoices/INVO_F4956707-A11F-433F-AEFC-8C586D4309BF",
+            "media": "application/json",
+            "type": "GET"
+        }
+    ]
+}

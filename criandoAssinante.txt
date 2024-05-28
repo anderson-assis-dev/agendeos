@@ -1,0 +1,112 @@
+https://sandbox.api.assinaturas.pagseguro.com/customers
+Reuest
+{
+    "address": {
+        "country": "BRA",
+        "street": "Rua Mem de S\u00e1",
+        "number": "123",
+        "complement": "teste",
+        "locality": "Paulo Afonso",
+        "city": "Paulo Afonso",
+        "region_code": "BA",
+        "postal_code": "48609050"
+    },
+    "reference_id": 33,
+    "name": "Cleberson Leite",
+    "email": "kleberson1992@gmail.com",
+    "tax_id": "65051754074",
+    "phones": [
+        {
+            "country": "55",
+            "area": "75",
+            "number": "988110781"
+        }
+    ],
+    "birth_date": "1997-10-27",
+    "billing_info": [
+        {
+            "card": {
+                "encrypted": "fBWAHAZWAvOawZBOK84hjWq8ephPWEJaBQfdfylzoIywu85cGhoBIWxB14OjAu0SCUj3UN2mw1Ayn+kGcK5iRUyJmI1fJvKuZEykqZ+WEk\/\/T8ZDFUbnq6ChK\/r03bUffvpOBms8pA7eamXxRWp\/kMOeTByKvQ4sBX3E4+nfnfqutmlQ8zBcgPB3J\/jncOamZEn8NTewH2MBG1aN8JlERj\/YbxFfN86jC4BSOyNG7Ff8ZpQiGkzFKHwa5sLa6eXVsZRhFN1I4NYh77BZTEVzVwrLfdFofqWtdYTspWzmvytpij7UVeHea+P0hi0uOs3IErgmLkjS8UzT0SUT0gwJsQ==",
+                "holder": {
+                    "name": "Cleberson Leite",
+                    "birth_date": "1997-10-27",
+                    "tax_id": "65051754074"
+                }
+            },
+            "type": "CREDIT_CARD"
+        }
+    ]
+}
+Response
+{
+    "id": "CUST_F6462C2B-1C86-4D4E-995A-009CC5B53877",
+    "reference_id": "33",
+    "email": "kleberson1992@gmail.com",
+    "name": "Cleberson Leite",
+    "tax_id": "65051754074",
+    "phones": [
+        {
+            "id": 1,
+            "area": "75",
+            "country": "55",
+            "number": "988110781"
+        }
+    ],
+    "birth_date": "1997-10-27",
+    "address": {
+        "street": "Rua Mem de Sá",
+        "number": "123",
+        "complement": "teste",
+        "locality": "Paulo Afonso",
+        "city": "Paulo Afonso",
+        "region_code": "BA",
+        "country": "BRA",
+        "postal_code": "48609050"
+    },
+    "billing_info": [
+        {
+            "type": "CREDIT_CARD",
+            "card": {
+                "token": "CARD_45996AC4-8172-4064-AE0B-F0BE219859B5",
+                "brand": "mastercard",
+                "first_digits": "524008",
+                "last_digits": "2454",
+                "exp_month": "12",
+                "exp_year": "2026",
+                "holder": {
+                    "name": "Anderson Nascimento",
+                    "birth_date": "1997-10-27",
+                    "tax_id": "65051754074"
+                }
+            }
+        }
+    ],
+    "created_at": "2024-02-27T14:39:30.805093333-03:00",
+    "updated_at": "2024-02-27T14:39:30.805094033-03:00",
+    "links": [
+        {
+            "rel": "SELF",
+            "href": "http://sandbox.api.assinaturas.pagseguro.com/customers/CUST_F6462C2B-1C86-4D4E-995A-009CC5B53877",
+            "media": "application/json",
+            "type": "GET"
+        },
+        {
+            "rel": "SELF",
+            "href": "http://sandbox.api.assinaturas.pagseguro.com/customers",
+            "media": "application/json",
+            "type": "GET"
+        },
+        {
+            "rel": "SELF",
+            "href": "http://sandbox.api.assinaturas.pagseguro.com/customers/CUST_F6462C2B-1C86-4D4E-995A-009CC5B53877",
+            "media": "application/json",
+            "type": "PUT"
+        },
+        {
+            "rel": "SELF",
+            "href": "http://sandbox.api.assinaturas.pagseguro.com/customers/CUST_F6462C2B-1C86-4D4E-995A-009CC5B53877/billing_info",
+            "media": "application/json",
+            "type": "PUT"
+        }
+    ]
+}

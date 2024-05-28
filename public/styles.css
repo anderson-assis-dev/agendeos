@@ -1,0 +1,245 @@
+:root {
+  --purple: #892a92;
+  --purple2: #70217a;
+  --white: #f6d3fd;
+  --height: 222px;
+  --width: 350px;
+  --font: "Overpass Mono", monospaced;
+  --masterFont: "Raleway", sans-serif;
+}
+
+/* default */
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Opacidade de 50% */
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#loading-container {
+    text-align: center;
+}
+
+body {
+  min-height: 100vh;
+  background: #ececec !important;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0 !important;
+}
+
+a {
+  color: unset;
+}
+
+p {
+  font-weight: 500;
+}
+/*  */
+
+/* global custom */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.separator {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+  margin-top: 20px;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+/*  */
+
+/* header */
+.header {
+  padding: 15px 0;
+  background: #424645;
+}
+
+.img-logo {
+  width: 9rem;
+}
+
+.contact-link {
+  color: #fff !important;
+  text-decoration: none;
+}
+/*  */
+
+/* main */
+.main-container {
+  padding: 8vh 0;
+}
+
+.title-lg {
+  font-size: 1.6rem;
+  color: #1f1f1f;
+  font-weight: 600;
+}
+
+.form-container {
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 30px;
+  padding: 45px;
+}
+
+.form-label {
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.form-control {
+  border-color: #cccbcb !important;
+  padding: 13px !important;
+  box-shadow: none !important;
+  border-radius: 10px !important;
+  text-transform: uppercase;
+}
+
+.form-control::placeholder {
+  text-transform: none;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+  border-color: #09bd6f !important;
+}
+
+.submit-button {
+  background-color: #0cb96e !important;
+  border: none !important;
+  padding: 13px !important;
+  font-weight: 600 !important;
+}
+
+.submit-button:hover {
+  background-color: #424645 !important;
+}
+
+.checkout-container {
+  background: #fff;
+  border-radius: 8px;
+  padding: 45px;
+  height: 700px;
+}
+
+.title-md {
+  font-size: 1rem;
+  color: #1f1f1f;
+  font-weight: 600;
+}
+
+.freight {
+  color: #09bd6f;
+}
+
+.error-message {
+  color: red;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.footer {
+  background: #424645;
+  padding: 5vh 0;
+}
+
+.text-footer {
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* credit card dynamic */
+.card-container {
+  background: rgb(5, 126, 59);
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+/*  */
+
+/* responsive medium*/
+@media only screen and (max-width: 992px) {
+  .main-container {
+    padding: 4vh 0;
+  }
+
+  .img-logo {
+    width: 120px;
+  }
+
+  .title-lg {
+    font-size: 1.2rem;
+    color: #1f1f1f;
+    font-weight: 600;
+  }
+
+  .form-container {
+    margin-top: 20px;
+  }
+
+  .checkout-container {
+    margin-top: 20px;
+    height: auto !important;
+  }
+
+  .text-footer {
+    text-align: start;
+  }
+
+  .text-footer:first-of-type {
+    margin-top: 20px;
+    text-align: start;
+  }
+
+  .text-footer:last-of-type {
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    padding: 3vh 0;
+  }
+
+  .card-container {
+    display: none;
+  }
+}
